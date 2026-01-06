@@ -1,0 +1,34 @@
+# General Settings
+project_name: "GradLock"
+save_dir: "auto"
+prefix: "(default)"
+
+# Training Parameters
+training:
+  learning_rate_feat: 0.001
+  learning_rate_cls: 0.001
+  num_epochs: 1
+  optimizer: "adam"
+  weight_decay: 0.0001
+
+# Model Settings
+model:
+  type: "CNN"
+  name: "ResNet18"
+  drop_out: 0.4
+  input_size: [3, 64, 64]
+  hidden_size: 1024
+  layer_depth: 3
+  num_classes: 10
+  is_pretrained: False
+
+# Dataset Settings
+dataset:
+  name: "MNIST"
+  path_train: "./dataset/MNIST/train"
+  path_val: "./dataset/MNIST/test"
+  bs: 64
+
+attack:
+  norm: 0.01
+  inject_ratio: 0.5
