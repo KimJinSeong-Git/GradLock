@@ -117,6 +117,6 @@ results/CNN_ResNet18_<settings>/
 This section explains how to run the extraction phase.  
 You should open and execute `extraction.ipynb` to recover the embedded samples.
 
-## ⚠️ Disclaimer
+## ⚠️ Disclaimer.
 This repository is for academic research purposes only.  
 The authors do not encourage any malicious use of the code.
